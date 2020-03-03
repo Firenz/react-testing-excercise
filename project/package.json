@@ -7,7 +7,9 @@
     "start": "run-p -l start:dev start:mock-server",
     "start:dev": "webpack-dev-server",
     "start:mock-server": "cd ./server && npm start",
-    "postinstall": "cd ./server && npm i"
+    "postinstall": "cd ./server && npm i",
+    "test": "jest --verbose -c ./config/test/jest.json",
+    "test:watch": "npm test -- --watchAll -i --no-cache"
   },
   "author": "",
   "license": "ISC",
