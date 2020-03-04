@@ -2,5 +2,6 @@
   "preset": "ts-jest",
   "restoreMocks": true,
   "rootDir": "../../",
-  "moduleDirectories": ["<rootDir>/src", "node_modules"]
+  "moduleDirectories": ["<rootDir>/src", "node_modules"],
+  "setupFilesAfterEnv": ["<rootDir>/config/test/setup-after.ts"]
 }
