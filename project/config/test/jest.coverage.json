@@ -1,0 +1,27 @@
+{
+  "preset": "ts-jest",
+  "restoreMocks": true,
+  "rootDir": "../../",
+  "moduleDirectories": ["<rootDir>/src", "node_modules"],
+  "setupFilesAfterEnv": [
+    "@testing-library/react/cleanup-after-each",
+    "<rootDir>/config/test/setup-after.ts"
+  ],
+  "collectCoverage": true,
+  "coverageReporters": ["text", "html"],
+  "coveragePathIgnorePatterns": [
+    "/node_modules/",
+    "config/test",
+    ".vscode",
+    ".awcache"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 50,
+      "functions": 50,
+      "lines": 50,
+      "statements": 50
+    }
+  },
+  "collectCoverageFrom": ["**/*.{ts,tsx}"]
+}

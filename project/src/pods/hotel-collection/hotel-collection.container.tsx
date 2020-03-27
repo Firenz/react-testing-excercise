@@ -9,5 +9,9 @@ export const HotelCollectionContainer = () => {
     loadHotelCollection();
   }, []);
 
-  return <HotelCollectionComponent hotelCollection={hotelCollection} />;
+  return (
+    <HotelCollectionComponent
+      hotelCollection={hotelCollection}
+    />
+  );
 };

@@ -10,7 +10,7 @@ export const useHotelCollection = () => {
   );
 
   const loadHotelCollection = () => {
-    getHotelCollection().then(result =>
+    return getHotelCollection().then(result =>
       setHotelCollection(mapToCollection(result, mapFromApiToVm))
     );
   };

@@ -21,7 +21,7 @@ export const LoginContainer = () => {
         areValidCredentials
           ? navigateToHotel(loginInfo)
           : alert(
-              'invalid credentials, use admin/test, excercise: display a mui snackbar instead of this alert.'
+              'invalid credentials, use admin/test, exercise: display a mui snackbar instead of this alert.'
             );
       }
     );
