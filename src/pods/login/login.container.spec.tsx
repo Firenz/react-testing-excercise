@@ -49,10 +49,8 @@ describe('login container specs', () => {
     await wait(() => {
       fireEvent.click(buttonElement);
     });
-    // const hotelCollectionElement = await waitForElement(() => getByTestId('hotel-collection'));
 
     //Assert
     expect(getValidateCredentialsStub).toHaveBeenCalled();
-    // expect(hotelCollectionElement).toBeInTheDocument();
   });
 });
