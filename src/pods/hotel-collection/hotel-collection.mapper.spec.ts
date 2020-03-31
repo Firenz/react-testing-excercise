@@ -3,7 +3,7 @@ import * as viewModel from './hotel-collection.vm';
 import { mapFromApiToVm } from './hotel-collection.mapper';
 
 describe('hotel collection mapper specs', () => {
-  xit('should return null when it feeds undefined', () => {
+  it('should return null when it feeds undefined', () => {
     //Arrange
     const hotel: apiModel.HotelEntityApi = undefined;
 
@@ -13,7 +13,7 @@ describe('hotel collection mapper specs', () => {
     //Assert
     expect(result).toBe(null);
   });
-  xit('should return null when it feeds null', () => {
+  it('should return null when it feeds null', () => {
     //Arrange
     const hotel: apiModel.HotelEntityApi = null;
 
@@ -23,7 +23,7 @@ describe('hotel collection mapper specs', () => {
     //Assert
     expect(result).toBe(null);
   });
-  xit('should return empty when it feeds empty', () => {
+  it('should return empty when it feeds empty', () => {
     //Arrange
     const hotel: apiModel.HotelEntityApi = <apiModel.HotelEntityApi>{};
 
