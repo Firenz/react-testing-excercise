@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { render, waitForElement } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import * as hook from './hotel-collection.hook';
 import { HotelEntityVm } from './hotel-collection.vm';
 import { HotelCollectionContainer } from './hotel-collection.container';
